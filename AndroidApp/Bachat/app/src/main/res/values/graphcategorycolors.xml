@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="healthcare">#e50000</color>
+    <color name="donations">#aa2297</color>
+    <color name="bills">#002396</color>
+    <color name="shopping">#b5a413</color>
+    <color name="dinning">#cb6998</color>
+    <color name="entertaiment">#0e9c9e</color>
+    <color name="groceries">#5aaa76</color>
+    <color name = "pets">#6a69dd</color>
+    <color name="transportation">#00a1ff</color>
+    <color name="loans">#174709</color>
+    <color name = "personalcare">#e30da8</color>
+    <color name = "miscellaneous">#e87a06</color>
+    <color name = "other">#E6B78B</color>
+    <color name = "error">#050505</color>
+</resources>

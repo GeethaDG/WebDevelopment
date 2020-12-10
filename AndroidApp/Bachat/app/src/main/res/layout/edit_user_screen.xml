@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/FlashTheme"
+    tools:context="com.example.Bachat.SetupScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#232323"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/textViewThresholdCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_Back"
+        android:layout_width="60dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewThresholdCategory"
+        app:layout_constraintEnd_toStartOf="@+id/toolbar2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_arrow_back"
+        android:background="#232323"/>
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        android:text="Edit User Details"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/Black"
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_home" />
+
+
+    <TextView
+        android:id="@+id/textViewEditName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="21dp"
+        android:text="Name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextEditName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEditName"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@+id/textViewEditName"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="49dp"
+        android:layout_marginStart="18dp"
+        android:ems="10"
+        android:hint="What would you like to be called?"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewEditMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textViewEditName"
+        android:text="E-Mail"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextEditMail"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="175dp"
+        android:ems="10"
+        android:hint="Where do we reach you at?"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FFFFFF"
+        android:layout_toRightOf="@+id/textViewEditMail" />
+
+    <TextView
+        android:id="@+id/textSetCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="110dp"
+        android:layout_below="@+id/textViewEditName"
+        android:text="Currency"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/editCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="240dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FFFFFF"
+        android:layout_toRightOf="@+id/textSetCurrency" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="159dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#4C4C4C"
+        android:text="CONFIRM"
+        android:layout_below="@+id/editTextEditMail"
+        />
+
+
+    <Button
+        android:id="@+id/buttonAddProfile"
+        android:layout_below="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Add Profile Office"
+         />
+
+
+
+    <Button
+        android:id="@+id/buttonSetProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnConfirm"
+        android:text="Set Profile Office"
+        />
+    <Button
+        android:id="@+id/ButtonSetProfileDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAddProfile"
+        android:layout_centerHorizontal="true"
+        android:text="Set Profile Default"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+
+
+</RelativeLayout>

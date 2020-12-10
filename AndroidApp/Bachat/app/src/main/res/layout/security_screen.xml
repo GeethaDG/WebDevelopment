@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewBannerCurrentQuestion"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="Current question is:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCurrentQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_toRightOf="@+id/textViewBannerCurrentQuestion"
+        android:layout_marginTop="26dp"
+        android:text="CurrentQ"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewBannerCurrentQuestion"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewBannerNewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter new question"
+        android:layout_below="@+id/textViewBannerCurrentQuestion"
+        android:textSize="16sp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/editTextNewQuestion"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewBannerNewQuestion"
+        android:ems="10"
+        android:hint="New question here"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewBannerCurrentAnswer"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="Current Answer is:"
+        android:textSize="16sp"
+        android:layout_below="@+id/editTextNewQuestion"
+        />
+
+    <TextView
+        android:id="@+id/textViewCurrentAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewBannerCurrentAnswer"
+        android:layout_below="@+id/editTextNewQuestion"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="26dp"
+        android:text="CurrentA"
+        android:textSize="16sp"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewBannerNewAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter new answer"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewBannerCurrentAnswer"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextNewAnswer"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="New answer here"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewBannerNewAnswer"
+        />
+
+
+    <Button
+        android:id="@+id/btnUpdateQA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Update Q/A"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        android:layout_below="@+id/editTextNewAnswer"
+        />
+
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@+id/btnUpdateQA"
+        />
+
+    <TextView
+        android:id="@+id/textViewBannerCurrentPassword"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/divider2"
+        android:text="Current password is:"
+        android:textSize="16sp"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewCurrentPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="CurrentP"
+        android:textSize="16sp"
+        android:layout_below="@+id/divider2"
+        android:layout_toRightOf="@+id/textViewBannerCurrentPassword"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewBannerNewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/textViewBannerCurrentPassword"
+        android:layout_marginTop="10dp"
+        android:text="Enter new password"
+        android:textSize="16sp"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextNewPassword"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:layout_below="@+id/textViewBannerNewPassword"
+        android:hint="New password here"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextNewPasswordConfirm"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Confirm new password"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_below="@+id/editTextNewPassword"
+        />
+
+
+    <Button
+        android:id="@+id/btnUpdatePassword"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:text="Update Password"
+        android:layout_below="@+id/editTextNewPasswordConfirm"
+        />
+</RelativeLayout>

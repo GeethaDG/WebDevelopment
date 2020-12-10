@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewBannerForget1"
+        android:layout_width="380dp"
+        android:layout_marginStart="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine|textImeMultiLine"
+        android:text="Well, forgeting your credentials is never fun. But you needn't worry!"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewBannerForget2"
+        android:layout_below="@+id/textViewBannerForget1"
+        android:layout_marginStart="15dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:inputType="textMultiLine|textImeMultiLine"
+        android:text="We got your back... It was for this that we asked you for a breif introduction the first time we met"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewBannerForget3"
+        android:layout_below="@+id/textViewBannerForget2"
+        android:layout_width="380dp"
+        android:layout_marginStart="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:inputType="textMultiLine|textImeMultiLine"
+        android:text="Just answer this question about yourself so that we know it is really you"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewBannerQuestion"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine|textImeMultiLine"
+        android:text="Question:"
+        android:layout_below="@+id/textViewBannerForget3"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:id="@+id/editTextForgotAnswer"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textViewBannerQuestion"
+        android:ems="10"
+        android:layout_marginStart="15dp"
+        android:hint="Please enter your answer here"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/btnCheckAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextForgotAnswer"
+        android:layout_centerHorizontal="true"
+        android:text="Check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="80dp"
+        />
+
+</RelativeLayout>
