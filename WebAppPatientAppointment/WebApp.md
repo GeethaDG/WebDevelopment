@@ -22,6 +22,8 @@ Secretary has only access to Last name and Date and time of the appointment
 
 This I considered keeping in my mind the data security. 
 
+# Questions
+
 Question : What privacy issues are related to this feature? 
 1. Handling Patient details is very important in this case, since its not a secure connection, there is possibility of data theft. 
 2. The 'Purpose of Appointment' field is purely for the Doctor and Patient to know and not any third person, hence I tried to address this with the feature of secretary.
