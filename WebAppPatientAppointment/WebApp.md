@@ -6,21 +6,20 @@ Author Note :
 
 
 Design Though Process and design I wanted to implement : 
-Text Fields at Patient End
-Patient Name - First Name Last Name Text  with permissions for Letters a-z only allowed 
-Purpose of Appointment ->  Text Field
-Suggested Date - > Date Field
-Suggested Time -> Drop Down 
+- Text Fields at Patient End
+- Patient Name - First Name Last Name Text  with permissions for Letters a-z only allowed 
+- Purpose of Appointment ->  Text Field
+- Suggested Date - > Date Field
+- Suggested Time -> Drop Down 
 
-For suggested Date and Time, using onchange method on Date, I wanted to show only the slots that are available to be booked to the patient 
+- For suggested Date and Time, using onchange method on Date, I wanted to show only the slots that are available to be booked to the patient 
 
-UI -> Wanted to add create a view with an option to select if the visiting member is a patient or Doctor or Secretary
+- UI -> Wanted to add create a view with an option to select if the visiting member is a patient or Doctor or Secretary
 
-Patient with submit data. 
-Doctor has access to all the patient details patient has entered while booking the appointment 
-Secretary has only access to Last name and Date and time of the appointment
-
-This I considered keeping in my mind the data security. 
+- Patient with submit data. 
+- Doctor has access to all the patient details patient has entered while booking the appointment 
+- Secretary has only access to Last name and Date and time of the appointment
+- Above was considered keeping in my mind the data security. 
 
 # Questions
 
