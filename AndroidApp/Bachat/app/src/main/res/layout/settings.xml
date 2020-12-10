@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:accessibilityPaneTitle="Settings">
+
+
+    <ImageButton
+        android:id="@+id/Name_Button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/PrimaryDarkColour2"
+
+        app:srcCompat="@drawable/ic_account" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="60dp"
+        android:gravity="center_vertical"
+        android:text="User Details"
+        android:textSize="20sp"
+        android:typeface="sans"
+        />
+
+    <ImageButton
+        android:id="@+id/Security_Button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_alignLeft="@+id/Name_Button"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/PrimaryDarkColour2"
+        app:layout_constraintEnd_toStartOf="@+id/Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_account" />
+
+    <TextView
+        android:id="@+id/Security"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_vertical"
+        android:text="Security"
+        android:textSize="20sp"
+        android:typeface="sans"
+        android:layout_marginStart="60dp"
+         />
+
+
+</RelativeLayout>

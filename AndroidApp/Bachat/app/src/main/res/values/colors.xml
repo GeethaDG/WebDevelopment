@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#83E8DE</color>
+    <color name="PrimaryDarkColour">#A4E1E1</color>
+    <color name="PrimaryColour">#ADE9E3</color>
+    <color name="PrimaryDarkColour2">#323232</color>
+    <color name="PrimaryText">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="Grey">#2B2B2B</color>
+    <color name = "colorTextPrimary">#212121</color>
+    <color name = "colorTextSecondary">#757575</color>
+
+    <color name="DeleteRed">#FF1100</color>
+
+    <color name = "dialogbox">#563AA1F3</color>
+
+    <color name="colorPrimary">#8C030E17</color>
+    <color name="colorPrimaryDark">#CD060D13</color>
+
+    <color name = "colorBackground">#15020005</color>
+    <color name = "colorOnboardingIndicatorInactive">#68040C13</color>
+
+    <!--Graph Colors for home fragment-->
+    <color name="Income">#49b14e</color>
+    <color name="Expense">#f14434</color>
+
+    <!--Graph Colors for Category pie chart-->
+
+
+    <!--Theme Colors Advanced Prototype-->
+    <color name="theme_color_1">#f5f6fa</color>
+    <color name="theme_color_2">#49b14e</color>
+    <color name="primary_text_color">#f5f6fa</color>
+    <color name="selection_higlight">#f5f6fa</color>
+
+</resources>

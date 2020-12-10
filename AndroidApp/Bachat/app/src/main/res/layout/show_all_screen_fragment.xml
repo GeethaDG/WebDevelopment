@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+ <Button
+     android:id="@+id/btnFilters"
+     android:layout_width="wrap_content"
+     android:layout_height="30dp"
+     android:layout_marginStart="10dp"
+     android:textSize="20dp"
+     android:layout_marginTop="10dp"
+     android:background="#4C4C4C"
+     android:text="Filter2"/>
+
+
+    <TextView
+        android:id="@+id/chooseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnCategory"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/editFirstDate"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/spnCategory"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/chooseDate"
+        android:background="#353333"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/editSecondDate"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/spnCategory"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/editFirstDate"
+        android:background="#FF353333"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/appliedFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/editSecondDate"
+        android:layout_marginTop="20dp"
+        android:text="No Active filters" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerlistFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="250dp"
+        tools:layout_editor_absoluteY="122dp" />
+
+
+
+</RelativeLayout>

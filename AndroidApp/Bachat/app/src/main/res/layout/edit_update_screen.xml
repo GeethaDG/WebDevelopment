@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/Black"
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_home" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#232323"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/textViewThresholdCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_Back"
+        android:layout_width="60dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewThresholdCategory"
+        app:layout_constraintEnd_toStartOf="@+id/toolbar2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_arrow_back"
+        android:background="#232323"/>
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        android:text="Edit Expense"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        />
+
+    <TextView
+        android:id="@+id/textViewEditCategory"
+        android:layout_width="382dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEditSubcategory"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter a subcategory"
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/textViewEditCategory"
+        />
+    <Spinner
+        android:id="@+id/spnEditMOP"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/editTextEditSubcategory"/>
+
+    <EditText
+        android:id="@+id/editTextEditAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnEditMOP"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="Enter amount..."
+        android:inputType="number"
+        android:singleLine="true"
+        android:text="" />
+
+    <Spinner
+        android:id="@+id/spnCurr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnEditMOP"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/editTextEditAmount"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editTextEditDate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:hint="Click here to add a date..."
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/editTextEditAmount" />
+
+    <EditText
+        android:id="@+id/editTextEditNote"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEditDate"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:ems="10"
+        android:hint="Click here to add notes..."
+        android:inputType="textLongMessage" />
+
+    <Button
+        android:id="@+id/btnEditAddNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEditDate"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/editTextEditNote"
+        android:backgroundTint="#4C4C4C"
+        android:text="Add Note" />
+
+    <EditText
+    android:id="@+id/editTextContact"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editTextEditNote"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="15dp"
+    android:ems="10"
+    android:hint="Click here to add notes..."
+    android:inputType="textLongMessage" />
+
+    <Button
+        android:id="@+id/btnRemContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEditNote"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/editTextContact"
+        android:backgroundTint="#4C4C4C"
+        android:text="Remove" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#4C4C4C"
+        android:text="UPDATE"
+        android:layout_below="@+id/editTextEditNote"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>

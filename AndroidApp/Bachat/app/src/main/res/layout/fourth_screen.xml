@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line1"
+        android:padding="20dp">
+
+
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="70dp"
+            android:text="Date"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:visibility="visible"
+            />
+
+        <DatePicker
+            android:id="@+id/editTextDate2"
+            android:layout_width="261dp"
+            android:layout_height="139dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:ems="10"
+            android:scrollbars="vertical" />
+
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:orientation="horizontal"
+        android:id="@+id/line2"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textViewMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:text="Mode"
+            android:textSize="20sp"
+            android:typeface="sans"
+
+            android:visibility="visible"
+            tools:visibility="visible" />
+        <Spinner
+            android:id="@+id/spnModes"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="#4C4C4C"
+            android:hint="Choose mode of payment"
+            android:spinnerMode="dropdown"
+            android:layout_marginStart="62dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:id="@+id/line3"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textViewAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:visibility="visible"
+            android:layout_marginStart="16dp"
+            tools:visibility="visible"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/editTextAmount2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:ems="10"
+            android:hint="Enter amount"
+            android:inputType="numberDecimal"
+            android:theme="@style/EditTextHint1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnModes" />
+
+        <Spinner
+            android:id="@+id/spnCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#4C4C4C"
+            android:spinnerMode="dropdown"
+            android:layout_marginStart="10dp" />
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="#4C4C4C"
+            android:layout_marginStart="5dp"
+
+            android:layout_toEndOf="@+id/spnCurrency"
+            android:text="convert" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line3"
+        android:id="@+id/line4"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textViewNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:text="Note"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextNote2"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="73dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Add notes here..."
+            android:inputType="textNoSuggestions"
+            android:theme="@style/EditTextHint1" />
+
+        <Button
+            android:id="@+id/btnAddNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4C4C4C"
+            android:ems="10"
+            android:text="Add note" />
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddTransaction"
+        android:layout_width="144dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/line4"
+
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="130dp"
+        android:backgroundTint="#4C4C4C"
+        android:text="Add  Expense" />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/Black"
+        app:srcCompat="@drawable/ic_home"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/buttonAddContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_below="@+id/line4"
+       android:layout_marginTop="30dp"
+        android:layout_marginStart="129dp"
+        android:backgroundTint="#4C4C4C"
+        android:text="Add a contact" />
+
+    <Button
+        android:id="@+id/buttonRemContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_toRightOf="@+id/buttonAddContact"
+        android:layout_below="@+id/line4"
+
+        android:backgroundTint="#4C4C4C"
+android:layout_marginTop="30dp"
+        android:text="Remove Contact" />
+
+
+</RelativeLayout>
